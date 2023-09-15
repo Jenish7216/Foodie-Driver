@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "791392975240",
+    "firebase_url": "https://reeyo-app-default-rtdb.firebaseio.com",
+    "project_id": "reeyo-app",
+    "storage_bucket": "reeyo-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:791392975240:android:a52cc69c6af4d1a21de23d",
+        "android_client_info": {
+          "package_name": "com.foodies.customer.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "791392975240-4enivmkclu8rvn5v54niej377ugh12s6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2Ro4LTacgTe3zkrDePr-JlaRZdwmR3rI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "791392975240-4enivmkclu8rvn5v54niej377ugh12s6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "791392975240-dpma6q9uk728s9m8vtandvi8gkpdta5d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.kooky.reeyo"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:791392975240:android:1919fa9dd498eadc1de23d",
+        "android_client_info": {
+          "package_name": "com.foodies.driver.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "791392975240-4enivmkclu8rvn5v54niej377ugh12s6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2Ro4LTacgTe3zkrDePr-JlaRZdwmR3rI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "791392975240-4enivmkclu8rvn5v54niej377ugh12s6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "791392975240-dpma6q9uk728s9m8vtandvi8gkpdta5d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.kooky.reeyo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
