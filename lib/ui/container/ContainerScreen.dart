@@ -41,7 +41,7 @@ enum DrawerSelection {
 }
 
 class ContainerScreen extends StatefulWidget {
-  final User user;
+  final User? user;
 
   ContainerScreen({
     Key? key,
@@ -64,7 +64,7 @@ class _ContainerScreen extends State<ContainerScreen> {
   @override
   void initState() {
     super.initState();
-    user = widget.user;
+    user = widget.user!;
     _currentWidget = HomeScreen();
     setCurrency();
     updateCurrentLocation();

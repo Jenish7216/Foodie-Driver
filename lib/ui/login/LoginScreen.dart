@@ -12,6 +12,8 @@ import 'package:foodie_driver/ui/phoneAuth/PhoneNumberInputScreen.dart';
 import 'package:foodie_driver/ui/resetPasswordScreen/ResetPasswordScreen.dart';
 import 'package:the_apple_sign_in/the_apple_sign_in.dart' as apple;
 
+import '../../bottom_bar_screen.dart.dart';
+
 class LoginScreen extends StatefulWidget {
   @override
   State createState() {
@@ -289,7 +291,9 @@ class _LoginScreen extends State<LoginScreen> {
       log("user data ${result.isActive}");
       if (result.active) {
         MyAppState.currentUser = result;
-        pushAndRemoveUntil(context, ContainerScreen(user: result), false);
+        // pushAndRemoveUntil(context, ContainerScreen(user: result), false);
+        pushAndRemoveUntil(context, BottomBar(user: result), false);
+
       } else {
         showAlertDialog(context, "notLogIn".tr(), 'User not activated yet.'.tr(), true);
       }

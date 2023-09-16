@@ -18,7 +18,7 @@ import 'package:foodie_driver/ui/reauthScreen/reauth_user_screen.dart';
 import 'package:foodie_driver/ui/settings/SettingsScreen.dart';
 
 class ProfileScreen extends StatefulWidget {
-  final User user;
+  final User? user;
 
   ProfileScreen({Key? key, required this.user}) : super(key: key);
 
@@ -32,7 +32,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
   @override
   void initState() {
-    user = widget.user;
+    user = widget.user!;
     super.initState();
   }
 

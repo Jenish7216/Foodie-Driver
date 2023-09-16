@@ -86,6 +86,7 @@ class WalletScreenState extends State<WalletScreen> {
   getData() async {
     try {
       userQuery = fireStore.collection(USERS).doc(userId).snapshots();
+
       print(userQuery!.isEmpty);
     } catch (e) {
       print(e);

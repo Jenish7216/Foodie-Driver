@@ -19,6 +19,7 @@ import 'package:foodie_driver/ui/onBoarding/OnBoardingScreen.dart';
 import 'package:foodie_driver/userPrefrence.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'bottom_bar_screen.dart.dart';
 import 'model/User.dart';
 
 Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
@@ -199,7 +200,9 @@ class OnBoardingState extends State<OnBoarding> {
             user.fcmToken = await FireStoreUtils.firebaseMessaging.getToken() ?? '';
             await FireStoreUtils.updateCurrentUser(user);
             MyAppState.currentUser = user;
-            pushReplacement(context, ContainerScreen(user: user));
+            // pushReplacement(context, ContainerScreen(user: user));
+            pushAndRemoveUntil(context, BottomBar(user: user), false);
+
           } else {
             user.isActive = false;
             user.lastOnlineTimestamp = Timestamp.now();
